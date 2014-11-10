@@ -47,7 +47,7 @@ class tx_seobasics_sitemap {
 		$this->conf = $conf;
 		$id = intval($GLOBALS['TSFE']->id);
 		$depth = 50;
-		$additionalFields = 'uid,pid,doktype,shortcut,crdate,SYS_LASTCHANGED';
+		$additionalFields = 'uid,pid,doktype,shortcut,crdate,SYS_LASTCHANGED,shortcut_mode';
 
 		$baseURL = $this->getBaseUrl();
 		$baseURLParts = parse_url($baseURL);
